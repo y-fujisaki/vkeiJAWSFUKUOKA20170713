@@ -11,7 +11,10 @@ def calendar(event, context):
 
     response = {
         "statusCode": 200,
-        "headers" : {"Access-Control-Allow-Origin" : "*"},
+        "headers" : {
+            "Access-Control-Allow-Origin" : "*",
+            "Content-Type": "application/json; charset=utf8"
+        },
         "body": body
     }
 
