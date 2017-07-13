@@ -1,0 +1,18 @@
+service: slsVkei
+
+provider:
+  name: aws
+  runtime: python3.6
+  region: ap-northeast-1
+
+plugins:
+  - serverless-python-requirements
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: vcalendar
+          method: get
+          cors: true
