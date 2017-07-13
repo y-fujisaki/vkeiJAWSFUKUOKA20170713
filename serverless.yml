@@ -9,10 +9,10 @@ plugins:
   - serverless-python-requirements
 
 functions:
-  hello:
-    handler: handler.hello
+  calendar: 
+    handler: vkei.calendar 
     events:
       - http:
-          path: vcalendar
-          method: get
+          path: vcalendar 
+          method: get 
           cors: true
